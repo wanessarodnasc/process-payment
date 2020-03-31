@@ -1,0 +1,37 @@
+{
+	"info": {
+		"_postman_id": "4ce00395-44d2-4ebf-956d-91348ee78a2d",
+		"name": "process-payment",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Process Payment",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"completeName\": \"Wanessa Nascimento\",\n\t\"cpf\": \"35177355221\",\n\t\"cardData\": {\n        \"cardNumber\": \"1111222233334444\",\n        \"expiredDate\": \"01/25\",\n        \"code\": \"123\"\n    },\n    \"value\": 123.00,\n    \"installment\": 1 \n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8081/process-payment",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"process-payment"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
